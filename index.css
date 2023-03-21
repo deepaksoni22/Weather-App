@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 100%;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weatherCard {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  width: 80%;
+  height: 35%;
+  background: linear-gradient(to left, #66ffff 1%, #0099ff 99%);
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.heading {
+  padding-left: 0.2rem;
+}
+.about-temp {
+  display: flex;
+  gap: 3rem;
+  align-items: baseline;
+  align-items: last baseline;
+}
+.temp {
+  font-size: 5rem;
+}
+.discription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+.weatherCard img {
+  width: 20%;
+  height: 120%;
+
+  object-fit: fill;
+}
+/* <--------------Media Queries-------------> */
+@media (max-width: 820px) {
+  .details {
+    height: max-content;
+    /* height: 100vh; */
+  }
+  .about-temp {
+    flex-direction: column;
+  }
+  .weatherCard img {
+    width: 20%;
+    height: 80%;
+
+    object-fit: fill;
+  }
+}
+@media (max-width: 480px) {
+  .details {
+    height: max-content;
+    /* height: 100vh; */
+  }
+  .about-temp {
+    flex-direction: column;
+  }
+}
